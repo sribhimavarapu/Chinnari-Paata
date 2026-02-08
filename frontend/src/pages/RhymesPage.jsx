@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Home, Play, Pause, SkipBack, SkipForward, Repeat, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import ReactPlayer from 'react-player/youtube';
+import ReactPlayer from 'react-player';
 import { RHYMES } from '../data/languageData';
 import { useProgress } from '../hooks/useProgress';
 
