@@ -167,13 +167,21 @@ const RhymesPage = () => {
 
             {/* Video container */}
             <div className="flex-1 flex items-center justify-center p-4 md:p-8">
-              <div className="w-full max-w-4xl aspect-video rounded-3xl overflow-hidden shadow-2xl bg-black">
+              <div className="w-full max-w-4xl aspect-video rounded-3xl overflow-hidden shadow-2xl bg-black relative">
+                {!isReady && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black z-10">
+                    <div className="text-center">
+                      <div className="w-16 h-16 border-4 border-white border-t-transparent rounded-full animate-spin mb-4 mx-auto"></div>
+                      <p className="text-white text-lg font-nunito">Loading video...</p>
+                    </div>
+                  </div>
+                )}
                 <ReactPlayer
                   ref={playerRef}
                   url={`https://www.youtube.com/watch?v=${selectedRhyme.id}`}
                   width="100%"
                   height="100%"
-                  playing={isPlaying && isReady}
+                  playing={isPlaying}
                   loop={isLooping}
                   controls={true}
                   onReady={handleReady}
@@ -187,7 +195,8 @@ const RhymesPage = () => {
                         modestbranding: 1,
                         rel: 0,
                         showinfo: 0,
-                        autoplay: 1
+                        autoplay: 1,
+                        origin: window.location.origin
                       }
                     }
                   }}
