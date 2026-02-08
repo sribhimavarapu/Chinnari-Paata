@@ -106,16 +106,16 @@ export const RHYMES = [
     thumbnail: 'https://img.youtube.com/vi/nlOeOkkFDic/mqdefault.jpg'
   },
   { 
-    id: 'JMV3lM_2bA4', 
-    title: 'లల్లా లల్లా లోరి', 
-    englishTitle: 'Lullaby Song',
-    thumbnail: 'https://img.youtube.com/vi/JMV3lM_2bA4/mqdefault.jpg'
+    id: 'sW7YVzuLe3c', 
+    title: 'చందమామ రావే', 
+    englishTitle: 'Chandamama Rave',
+    thumbnail: 'https://img.youtube.com/vi/sW7YVzuLe3c/mqdefault.jpg'
   },
   { 
-    id: 'xwXDqM2T7gs', 
-    title: 'చందమామ రావే', 
-    englishTitle: 'Moon Come Here',
-    thumbnail: 'https://img.youtube.com/vi/xwXDqM2T7gs/mqdefault.jpg'
+    id: 'VlPrUHjPdKI', 
+    title: 'కొత్త కొత్త బొమ్మ', 
+    englishTitle: 'New Doll Song',
+    thumbnail: 'https://img.youtube.com/vi/VlPrUHjPdKI/mqdefault.jpg'
   }
 ];
 
