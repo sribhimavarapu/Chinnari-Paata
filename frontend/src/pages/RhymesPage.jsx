@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Home, Play, Pause, SkipBack, SkipForward, Repeat, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -12,18 +12,28 @@ const RhymesPage = () => {
   const [selectedRhyme, setSelectedRhyme] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLooping, setIsLooping] = useState(true);
+  const [isReady, setIsReady] = useState(false);
   const playerRef = useRef(null);
 
-  const handleRhymeSelect = (rhyme) => {
-    setSelectedRhyme(rhyme);
-    setIsPlaying(true);
-    recordRhymeWatched(rhyme.id);
-  };
-
-  const handleClose = () => {
-    setSelectedRhyme(null);
+  const handleRhymeSelect = useCallback((rhyme) => {
+    setIsReady(false);
     setIsPlaying(false);
-  };
+    setSelectedRhyme(rhyme);
+    recordRhymeWatched(rhyme.id);
+  }, [recordRhymeWatched]);
+
+  const handleReady = useCallback(() => {
+    setIsReady(true);
+    setIsPlaying(true);
+  }, []);
+
+  const handleClose = useCallback(() => {
+    setIsPlaying(false);
+    setTimeout(() => {
+      setSelectedRhyme(null);
+      setIsReady(false);
+    }, 100);
+  }, []);
 
   const handlePrevious = () => {
     if (!selectedRhyme) return;
