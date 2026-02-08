@@ -97,15 +97,15 @@ const WordsPage = () => {
                   <div className="relative h-full flex flex-col items-center justify-center text-white p-6">
                     <span className="text-6xl mb-4">{category.icon}</span>
                     <h2 
-                      className="text-3xl md:text-4xl font-black"
+                      className="text-2xl sm:text-3xl md:text-4xl font-black"
                       style={{ fontFamily: 'Ramabhadra, sans-serif' }}
                     >
                       {category.name}
                     </h2>
-                    <p className="text-lg opacity-90 font-nunito">
+                    <p className="text-base sm:text-lg opacity-90 font-nunito">
                       {category.englishName}
                     </p>
-                    <p className="text-sm opacity-70 mt-2 font-nunito">
+                    <p className="text-xs sm:text-sm opacity-70 mt-2 font-nunito">
                       {category.words.length} words
                     </p>
                   </div>
@@ -113,13 +113,13 @@ const WordsPage = () => {
               ))}
             </motion.div>
           ) : (
-            // Words Grid
+            // Words Grid - 2 columns on all sizes for toddler-friendly tapping
             <motion.div
               key="words"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
+              className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 pb-20"
             >
               {WORD_CATEGORIES[selectedCategory].words.map((word, index) => (
                 <motion.div
