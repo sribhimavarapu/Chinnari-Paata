@@ -173,18 +173,21 @@ const RhymesPage = () => {
                   url={`https://www.youtube.com/watch?v=${selectedRhyme.id}`}
                   width="100%"
                   height="100%"
-                  playing={isPlaying}
+                  playing={isPlaying && isReady}
                   loop={isLooping}
-                  controls={false}
+                  controls={true}
+                  onReady={handleReady}
                   onEnded={handleEnded}
                   onPlay={() => setIsPlaying(true)}
                   onPause={() => setIsPlaying(false)}
+                  onError={(e) => console.log('Player error:', e)}
                   config={{
                     youtube: {
                       playerVars: {
                         modestbranding: 1,
                         rel: 0,
-                        showinfo: 0
+                        showinfo: 0,
+                        autoplay: 1
                       }
                     }
                   }}
