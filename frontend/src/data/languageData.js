@@ -9,21 +9,21 @@ export const LANGUAGES = {
 };
 
 export const TELUGU_VOWELS = [
-  { letter: 'అ', transliteration: 'a', example: 'అమ్మ', exampleMeaning: 'Mother', exampleImage: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400' },
-  { letter: 'ఆ', transliteration: 'aa', example: 'ఆపిల్', exampleMeaning: 'Apple', exampleImage: 'https://images.unsplash.com/photo-1568702846914-96b305d2uj8e?w=400' },
-  { letter: 'ఇ', transliteration: 'i', example: 'ఇల్లు', exampleMeaning: 'House', exampleImage: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400' },
-  { letter: 'ఈ', transliteration: 'ee', example: 'ఈగ', exampleMeaning: 'Fly', exampleImage: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400' },
-  { letter: 'ఉ', transliteration: 'u', example: 'ఉంగరం', exampleMeaning: 'Ring', exampleImage: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400' },
-  { letter: 'ఊ', transliteration: 'oo', example: 'ఊయల', exampleMeaning: 'Swing', exampleImage: 'https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=400' },
-  { letter: 'ఋ', transliteration: 'ru', example: 'ఋషి', exampleMeaning: 'Sage', exampleImage: 'https://images.unsplash.com/photo-1545389336-cf090694435e?w=400' },
-  { letter: 'ఎ', transliteration: 'e', example: 'ఎలుక', exampleMeaning: 'Mouse', exampleImage: 'https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=400' },
-  { letter: 'ఏ', transliteration: 'ae', example: 'ఏనుగు', exampleMeaning: 'Elephant', exampleImage: 'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=400' },
-  { letter: 'ఐ', transliteration: 'ai', example: 'ఐస్', exampleMeaning: 'Ice', exampleImage: 'https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=400' },
-  { letter: 'ఒ', transliteration: 'o', example: 'ఒంటె', exampleMeaning: 'Camel', exampleImage: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=400' },
-  { letter: 'ఓ', transliteration: 'oe', example: 'ఓడ', exampleMeaning: 'Boat', exampleImage: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400' },
-  { letter: 'ఔ', transliteration: 'au', example: 'ఔషధం', exampleMeaning: 'Medicine', exampleImage: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400' },
-  { letter: 'అం', transliteration: 'am', example: 'అంగడి', exampleMeaning: 'Shop', exampleImage: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400' },
-  { letter: 'అః', transliteration: 'ah', example: 'దుఃఖం', exampleMeaning: 'Sadness', exampleImage: 'https://images.unsplash.com/photo-1523301343968-6a6ebf63c672?w=400' }
+  { letter: 'అ', transliteration: 'a', example: 'అమ్మ', exampleMeaning: 'Mother', exampleImage: 'https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?w=400' },
+  { letter: 'ఆ', transliteration: 'aa', example: 'ఆపిల్', exampleMeaning: 'Apple', exampleImage: 'https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?w=400' },
+  { letter: 'ఇ', transliteration: 'i', example: 'ఇల్లు', exampleMeaning: 'House', exampleImage: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?w=400' },
+  { letter: 'ఈ', transliteration: 'ee', example: 'ఈగ', exampleMeaning: 'Fly', exampleImage: 'https://images.pexels.com/photos/36738/fly-compound-eyes-enlarged-macro.jpg?w=400' },
+  { letter: 'ఉ', transliteration: 'u', example: 'ఉంగరం', exampleMeaning: 'Ring', exampleImage: 'https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg?w=400' },
+  { letter: 'ఊ', transliteration: 'oo', example: 'ఊయల', exampleMeaning: 'Swing', exampleImage: 'https://images.pexels.com/photos/296301/pexels-photo-296301.jpeg?w=400' },
+  { letter: 'ఋ', transliteration: 'ru', example: 'ఋషి', exampleMeaning: 'Sage', exampleImage: 'https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?w=400' },
+  { letter: 'ఎ', transliteration: 'e', example: 'ఎలుక', exampleMeaning: 'Mouse', exampleImage: 'https://images.pexels.com/photos/51340/rat-rodent-animal-cute-51340.jpeg?w=400' },
+  { letter: 'ఏ', transliteration: 'ae', example: 'ఏనుగు', exampleMeaning: 'Elephant', exampleImage: 'https://images.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg?w=400' },
+  { letter: 'ఐ', transliteration: 'ai', example: 'ఐస్', exampleMeaning: 'Ice', exampleImage: 'https://images.pexels.com/photos/1453499/pexels-photo-1453499.jpeg?w=400' },
+  { letter: 'ఒ', transliteration: 'o', example: 'ఒంటె', exampleMeaning: 'Camel', exampleImage: 'https://images.pexels.com/photos/2080840/pexels-photo-2080840.jpeg?w=400' },
+  { letter: 'ఓ', transliteration: 'oe', example: 'ఓడ', exampleMeaning: 'Boat', exampleImage: 'https://images.pexels.com/photos/273886/pexels-photo-273886.jpeg?w=400' },
+  { letter: 'ఔ', transliteration: 'au', example: 'ఔషధం', exampleMeaning: 'Medicine', exampleImage: 'https://images.pexels.com/photos/159211/headache-pain-pills-medication-159211.jpeg?w=400' },
+  { letter: 'అం', transliteration: 'am', example: 'అంగడి', exampleMeaning: 'Shop', exampleImage: 'https://images.pexels.com/photos/1528010/pexels-photo-1528010.jpeg?w=400' },
+  { letter: 'అః', transliteration: 'ah', example: 'దుఃఖం', exampleMeaning: 'Sadness', exampleImage: 'https://images.pexels.com/photos/568025/pexels-photo-568025.jpeg?w=400' }
 ];
 
 export const WORD_CATEGORIES = {
