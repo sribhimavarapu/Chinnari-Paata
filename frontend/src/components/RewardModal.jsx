@@ -4,6 +4,8 @@ import { X, Star } from 'lucide-react';
 import { STICKERS } from '../data/languageData';
 
 export const RewardModal = ({ isOpen, onClose, newSticker, earnedStickers = [] }) => {
+  if (!isOpen) return null;
+  
   return (
     <AnimatePresence>
       {isOpen && (
@@ -11,7 +13,7 @@ export const RewardModal = ({ isOpen, onClose, newSticker, earnedStickers = [] }
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center p-4"
           onClick={onClose}
         >
           <motion.div
@@ -19,14 +21,14 @@ export const RewardModal = ({ isOpen, onClose, newSticker, earnedStickers = [] }
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.5, opacity: 0, y: 50 }}
             transition={{ type: 'spring', damping: 15 }}
-            className="bg-white rounded-3xl p-6 md:p-8 max-w-md w-full shadow-2xl border-4 border-[#FFD93D]"
+            className="bg-white rounded-3xl p-6 md:p-8 max-w-md w-full shadow-2xl border-4 border-[#FFD93D] relative"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
             <button
               data-testid="close-reward-modal"
               onClick={onClose}
-              className="absolute top-4 right-4 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+              className="absolute top-4 right-4 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors z-10"
             >
               <X className="w-6 h-6 text-gray-500" />
             </button>
