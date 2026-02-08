@@ -129,7 +129,7 @@ const LettersPage = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-6"
+              className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6"
             >
               {TELUGU_VOWELS.map((vowel, index) => (
                 <motion.button
@@ -142,21 +142,22 @@ const LettersPage = () => {
                     border-b-8 border-gray-100 
                     active:border-b-0 active:translate-y-2
                     cursor-pointer transition-colors
+                    min-h-[100px] sm:min-h-[120px]
                     ${selectedLetter?.letter === vowel.letter && isPlaying ? 'bg-[#FFD93D]/30 border-[#FFD93D]' : ''}
                   `}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.05 }}
+                  transition={{ delay: index * 0.03 }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.9 }}
                 >
                   <span 
-                    className="text-5xl md:text-6xl text-[#FF6B6B] select-none"
+                    className="text-6xl sm:text-7xl md:text-8xl text-[#FF6B6B] select-none"
                     style={{ fontFamily: 'Ramabhadra, sans-serif' }}
                   >
                     {vowel.letter}
                   </span>
-                  <span className="text-xs text-gray-400 mt-1 font-nunito">
+                  <span className="text-sm sm:text-base text-gray-400 mt-2 font-nunito font-bold">
                     {vowel.transliteration}
                   </span>
                 </motion.button>
