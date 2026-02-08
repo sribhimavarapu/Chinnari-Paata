@@ -32,16 +32,16 @@ export const WORD_CATEGORIES = {
     englishName: 'Animals',
     icon: '🦁',
     color: '#FF6B6B',
-    image: 'https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=800',
+    image: 'https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?w=800',
     words: [
-      { telugu: 'కుక్క', english: 'Dog', image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400' },
-      { telugu: 'పిల్లి', english: 'Cat', image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400' },
-      { telugu: 'ఏనుగు', english: 'Elephant', image: 'https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=400' },
-      { telugu: 'సింహం', english: 'Lion', image: 'https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=400' },
-      { telugu: 'కోతి', english: 'Monkey', image: 'https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=400' },
-      { telugu: 'పావురం', english: 'Pigeon', image: 'https://images.unsplash.com/photo-1555169062-013468b47731?w=400' },
-      { telugu: 'చేప', english: 'Fish', image: 'https://images.unsplash.com/photo-1524704654690-b56c05c78a00?w=400' },
-      { telugu: 'ఆవు', english: 'Cow', image: 'https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?w=400' }
+      { telugu: 'కుక్క', english: 'Dog', image: 'https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?w=400' },
+      { telugu: 'పిల్లి', english: 'Cat', image: 'https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?w=400' },
+      { telugu: 'ఏనుగు', english: 'Elephant', image: 'https://images.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg?w=400' },
+      { telugu: 'సింహం', english: 'Lion', image: 'https://images.pexels.com/photos/68421/pexels-photo-68421.jpeg?w=400' },
+      { telugu: 'కోతి', english: 'Monkey', image: 'https://images.pexels.com/photos/2631487/pexels-photo-2631487.jpeg?w=400' },
+      { telugu: 'పావురం', english: 'Pigeon', image: 'https://images.pexels.com/photos/349758/hummingbird-bird-birds-349758.jpeg?w=400' },
+      { telugu: 'చేప', english: 'Fish', image: 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg?w=400' },
+      { telugu: 'ఆవు', english: 'Cow', image: 'https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg?w=400' }
     ]
   },
   fruits: {
@@ -49,16 +49,16 @@ export const WORD_CATEGORIES = {
     englishName: 'Fruits',
     icon: '🍎',
     color: '#FFD93D',
-    image: 'https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=800',
+    image: 'https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?w=800',
     words: [
-      { telugu: 'మామిడి', english: 'Mango', image: 'https://images.unsplash.com/photo-1553279768-865429fa0078?w=400' },
-      { telugu: 'అరటి', english: 'Banana', image: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400' },
-      { telugu: 'ఆపిల్', english: 'Apple', image: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400' },
-      { telugu: 'ద్రాక్ష', english: 'Grapes', image: 'https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=400' },
-      { telugu: 'పుచ్చకాయ', english: 'Watermelon', image: 'https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?w=400' },
-      { telugu: 'నారింజ', english: 'Orange', image: 'https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=400' },
-      { telugu: 'బొప్పాయి', english: 'Papaya', image: 'https://images.unsplash.com/photo-1517282009859-f000ec3b26fe?w=400' },
-      { telugu: 'దానిమ్మ', english: 'Pomegranate', image: 'https://images.unsplash.com/photo-1541344999736-83eca272f6fc?w=400' }
+      { telugu: 'మామిడి', english: 'Mango', image: 'https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?w=400' },
+      { telugu: 'అరటి', english: 'Banana', image: 'https://images.pexels.com/photos/2872755/pexels-photo-2872755.jpeg?w=400' },
+      { telugu: 'ఆపిల్', english: 'Apple', image: 'https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?w=400' },
+      { telugu: 'ద్రాక్ష', english: 'Grapes', image: 'https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg?w=400' },
+      { telugu: 'పుచ్చకాయ', english: 'Watermelon', image: 'https://images.pexels.com/photos/1313267/pexels-photo-1313267.jpeg?w=400' },
+      { telugu: 'నారింజ', english: 'Orange', image: 'https://images.pexels.com/photos/161559/background-bitter-breakfast-bright-161559.jpeg?w=400' },
+      { telugu: 'బొప్పాయి', english: 'Papaya', image: 'https://images.pexels.com/photos/1111624/pexels-photo-1111624.jpeg?w=400' },
+      { telugu: 'దానిమ్మ', english: 'Pomegranate', image: 'https://images.pexels.com/photos/65256/pomegranate-open-cores-fruit-65256.jpeg?w=400' }
     ]
   },
   colors: {
