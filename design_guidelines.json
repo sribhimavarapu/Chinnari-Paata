@@ -1,0 +1,109 @@
+{
+  "identity": {
+    "persona": "E1",
+    "theme": "Toddler Play - Light Mode",
+    "core_philosophy": "Digital Pop-up Book. Tactile, bouncy, and forgiving."
+  },
+  "typography": {
+    "font_family_english": "Nunito, sans-serif",
+    "font_family_telugu": "Ramabhadra, sans-serif",
+    "import_url": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Ramabhadra&display=swap",
+    "scale": {
+      "h1": "text-4xl md:text-6xl font-black tracking-tight",
+      "h2": "text-3xl md:text-5xl font-bold",
+      "body": "text-xl md:text-2xl font-semibold",
+      "button": "text-2xl font-black uppercase tracking-widest"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#FFFDF5",
+      "foreground": "#2D3436",
+      "primary": "#FF6B6B",
+      "secondary": "#FFD93D",
+      "tertiary": "#4D96FF",
+      "accent_green": "#6BCB77",
+      "neutral_soft": "#F0F0F0"
+    },
+    "usage": {
+      "body_bg": "bg-[#FFFDF5]",
+      "text_main": "text-[#2D3436]",
+      "card_letters": "bg-[#FF6B6B] text-white",
+      "card_words": "bg-[#FFD93D] text-[#2D3436]",
+      "card_rhymes": "bg-[#4D96FF] text-white",
+      "button_action": "bg-white text-black shadow-[0_8px_0_rgba(0,0,0,0.1)] active:shadow-none active:translate-y-2"
+    }
+  },
+  "layout_and_spacing": {
+    "touch_targets": {
+      "minimum_size": "min-h-[75px] min-w-[75px]",
+      "padding": "p-6 md:p-8"
+    },
+    "grid_system": {
+      "home": "grid grid-cols-1 md:grid-cols-3 gap-8 p-8 h-full place-items-stretch",
+      "letters": "grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 p-4",
+      "words": "flex flex-col gap-8 p-4 md:p-8 max-w-4xl mx-auto"
+    }
+  },
+  "components": {
+    "HomeCard": {
+      "style": "rounded-3xl shadow-xl flex flex-col items-center justify-center gap-4 transition-all hover:scale-105 active:scale-95 border-4 border-white/20 backdrop-blur-sm",
+      "motion": "Apply slight floating animation using framer-motion"
+    },
+    "LetterTile": {
+      "style": "aspect-square rounded-2xl bg-white shadow-lg flex items-center justify-center text-6xl md:text-8xl text-primary font-telugu border-b-8 border-gray-100 active:border-b-0 active:translate-y-2",
+      "interaction": "Plays audio on tap. Animate scale on tap."
+    },
+    "WordCard": {
+      "style": "w-full aspect-[4/3] rounded-3xl bg-white shadow-xl overflow-hidden relative group border-4 border-transparent hover:border-secondary transition-all",
+      "image_style": "w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+    },
+    "ParentGate": {
+      "trigger": "Long press (3s) on Settings icon",
+      "modal_style": "bg-white rounded-3xl p-8 border-4 border-gray-200 max-w-md w-full"
+    }
+  },
+  "assets": {
+    "images": {
+      "animals": {
+        "deer": "https://images.unsplash.com/photo-1521930651981-dceaf670cc58?q=80&w=800",
+        "general_category": "https://images.unsplash.com/photo-1521930651981-dceaf670cc58?q=80&w=800"
+      },
+      "fruits": {
+        "papaya": "https://images.unsplash.com/photo-1540476561060-188937ea3d0a?q=80&w=800",
+        "orange": "https://images.unsplash.com/photo-1611085053263-00651f764431?q=80&w=800",
+        "mix": "https://images.unsplash.com/photo-1728738227046-991191fbfb0e?q=80&w=800"
+      },
+      "placeholder_fallback": "https://placehold.co/600x400/FFD93D/2D3436?text=Image+Missing"
+    },
+    "youtube_ids": [
+      { "id": "_wFzgFmIMUs", "title": "Five Aloos" },
+      { "id": "SZhTR-kowVI", "title": "Aakesi Pappesi" },
+      { "id": "0F6WRYemPRE", "title": "Gundrani Laddu" },
+      { "id": "nlOeOkkFDic", "title": "Enugamma Enugu" }
+    ]
+  },
+  "content_data": {
+    "telugu_vowels": [
+      "అ", "ఆ", "ఇ", "ఈ", "ఉ", "ఊ", "ఋ", "ఎ", "ఏ", "ఐ", "ఒ", "ఓ", "ఔ", "అం", "అః"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "INSTALL: framer-motion, lucide-react, react-player (for YouTube).",
+    "THEME: Force Light Mode. Do not implement Dark Mode toggle for toddlers.",
+    "NAVIGATION: Use a persistent 'Home' button (House Icon) in the top-left corner of every inner page.",
+    "AUDIO: Use 'window.speechSynthesis' for Text-to-Speech (Telugu 'te-IN' voice if available, else fallback).",
+    "INTERACTION: Add 'cursor-pointer' to all interactive elements. Ensure tap targets are HUGE.",
+    "MOTION: Use <AnimatePresence> for page transitions. Make everything bounce slightly on entrance."
+  ],
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts. Use asymmetrical 'bento' grids where possible, but keep it simple for kids.",
+    "Create depth through layered design elements (shadows, borders).",
+    "You MUST NOT apply universal transition (transition: all).",
+    "You MUST NOT center align the app container text-align globally.",
+    "Every interaction needs micro-animations (hover, tap).",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures or noise overlays can add a 'paper' feel (optional)."
+  ]
+}
