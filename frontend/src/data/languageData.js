@@ -66,16 +66,16 @@ export const WORD_CATEGORIES = {
     englishName: 'Colors',
     icon: '🎨',
     color: '#4D96FF',
-    image: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?w=800',
+    image: 'https://images.pexels.com/photos/1646953/pexels-photo-1646953.jpeg?w=800',
     words: [
-      { telugu: 'ఎరుపు', english: 'Red', image: 'https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=400', bgColor: '#FF6B6B' },
-      { telugu: 'నీలం', english: 'Blue', image: 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=400', bgColor: '#4D96FF' },
-      { telugu: 'పసుపు', english: 'Yellow', image: 'https://images.unsplash.com/photo-1520716963369-9b24de292417?w=400', bgColor: '#FFD93D' },
-      { telugu: 'ఆకుపచ్చ', english: 'Green', image: 'https://images.unsplash.com/photo-1533038590840-1cde6e668a91?w=400', bgColor: '#6BCB77' },
-      { telugu: 'నారింజ', english: 'Orange', image: 'https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=400', bgColor: '#FF9F45' },
-      { telugu: 'ఊదా', english: 'Purple', image: 'https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=400', bgColor: '#9B59B6' },
-      { telugu: 'గులాబీ', english: 'Pink', image: 'https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=400', bgColor: '#FF6B9D' },
-      { telugu: 'తెలుపు', english: 'White', image: 'https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=400', bgColor: '#F5F5F5' }
+      { telugu: 'ఎరుపు', english: 'Red', bgColor: '#FF6B6B' },
+      { telugu: 'నీలం', english: 'Blue', bgColor: '#4D96FF' },
+      { telugu: 'పసుపు', english: 'Yellow', bgColor: '#FFD93D' },
+      { telugu: 'ఆకుపచ్చ', english: 'Green', bgColor: '#6BCB77' },
+      { telugu: 'నారింజ', english: 'Orange', bgColor: '#FF9F45' },
+      { telugu: 'ఊదా', english: 'Purple', bgColor: '#9B59B6' },
+      { telugu: 'గులాబీ', english: 'Pink', bgColor: '#FF6B9D' },
+      { telugu: 'తెలుపు', english: 'White', bgColor: '#F5F5F5' }
     ]
   }
 };
