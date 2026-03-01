@@ -47,13 +47,13 @@ export const WordCard = ({ word, onTap }) => {
           />
         )}
 
-        {/* Overlay with Telugu word */}
+        {/* Overlay with native word */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-3 sm:p-4 md:p-6">
           <span 
             className="text-2xl sm:text-3xl md:text-4xl text-white font-bold drop-shadow-lg"
             style={{ fontFamily: 'Ramabhadra, sans-serif' }}
           >
-            {word.telugu}
+            {word.telugu || word.native}
           </span>
           <span className="text-white/80 text-sm sm:text-base md:text-lg font-nunito">
             {word.english}
