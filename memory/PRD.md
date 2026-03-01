@@ -1,83 +1,119 @@
-# Chinnari Paata (చిన్నారి పాట) - Telugu Language Learning App for Toddlers
+# Chinnari Paata (చిన్నారి పాట) - Multi-Language Learning Platform for Toddlers
 
 ## Original Problem Statement
-Build a toddler-friendly interactive language learning web application focused on teaching Telugu as the first language. Target: Toddlers aged 2-5 years with parents as supervisors.
+Build a scalable toddler-friendly language learning web app starting with Telugu, with multi-language support, gamification, and parent analytics.
 
 ## Architecture
-- **Frontend**: React 19 with Tailwind CSS, framer-motion animations
-- **Backend**: FastAPI with MongoDB
-- **Audio**: Web Speech API (free TTS for Telugu pronunciation)
-- **Video**: YouTube integration via react-player
+
+### Frontend Structure
+```
+/app/frontend/src/
+├── config/
+│   └── languages.js         # Language configuration
+├── context/
+│   └── LanguageContext.jsx  # Language state management
+├── data/
+│   ├── telugu/              # Telugu language data
+│   │   ├── vowels.js
+│   │   ├── words.js
+│   │   ├── rhymes.js
+│   │   ├── strings.js
+│   │   └── index.js
+│   ├── hindi/               # Hindi language data
+│   │   └── ... (same structure)
+│   ├── shared/
+│   │   └── rewards.js       # Stickers, themes, milestones
+│   └── index.js             # Data loader
+├── hooks/
+│   ├── useAudio.js          # Audio playback with no overlap
+│   └── useProgress.js       # Gamification & analytics
+├── components/
+│   ├── LanguageSwitcher.jsx
+│   ├── ParentDashboard.jsx
+│   ├── RewardModal.jsx
+│   └── WordCard.jsx
+└── pages/
+    ├── HomePage.jsx
+    ├── LettersPage.jsx
+    ├── WordsPage.jsx
+    └── RhymesPage.jsx
+```
+
+### Tech Stack
+- React 19 + Tailwind CSS + framer-motion
+- FastAPI + MongoDB (backend ready for future features)
+- Web Speech API for TTS
+- YouTube embed for rhymes
+- localStorage for progress (no auth required yet)
+- Service Worker for PWA offline support
 
 ## User Personas
-1. **Primary**: Toddlers aged 2-5 years
-   - Need: Large touch targets, bright colors, audio-first experience
-   - No reading required
-2. **Secondary**: Parents/Caregivers
-   - Need: Hidden controls, progress tracking, time limits
+1. **Primary**: Toddlers 2-5 years - Large touch targets, audio-first
+2. **Secondary**: Parents - Hidden dashboard, progress tracking
 
-## Core Requirements (Static)
-- [x] Simple UI with large buttons (75px+ touch targets)
-- [x] Audio-first learning (Web Speech API)
-- [x] Three main modules: Letters, Words, Rhymes
-- [x] Reward system with stickers
-- [x] Parent controls behind long-press gate
+## What's Been Implemented (March 2026)
 
-## What's Been Implemented (Jan 2026)
-### Letters Module
-- 15 Telugu vowels (అ ఆ ఇ ఈ ఉ ఊ ఋ ఎ ఏ ఐ ఒ ఓ ఔ అం అః)
-- Grid and single-letter view modes
-- Tap-to-hear pronunciation
-- Example words with images
+### Multi-Language System ✅
+- Telugu (default) + Hindi support
+- Language switcher in header
+- Modular data structure per language
+- Easy to add Tamil, Kannada, etc.
 
-### Words Module
-- 3 categories: Animals (8 words), Fruits (8 words), Colors (8 words)
-- Tap-to-hear Telugu word
-- Confetti animation on interaction
+### Gamification ✅
+- Track: lettersTappedCount, wordsExploredCount, rhymesPlayedCount
+- 10 stickers unlocked at milestones (5, 10, 15, 20...)
+- 4 themes unlocked at (0, 20, 50, 100 interactions)
+- Streak tracking for daily usage
 
-### Rhymes Module
-- 6 YouTube Telugu rhymes integrated
-- Full-screen video player with controls
-- Loop playback support
+### Parent Dashboard ✅
+- Hidden behind 3-sec long press OR 4-corner tap
+- Progress tab: Stats, time tracking, progress bars
+- Rewards tab: Stickers & themes collection
+- Settings tab: Daily time limit, reset progress
 
-### Rewards System
-- 10 stickers unlockable at milestones
-- Progress stored in localStorage
+### Audio System ✅
+- Web Speech API with language detection
+- No overlapping playback
+- Slow/Normal speed toggle
+- Fallback beep when TTS unavailable
 
-### Parent Controls
-- 3-second long press to access
-- Daily time limit setting
-- Progress statistics
-- Reset option
+### PWA Support ✅
+- Service Worker for offline caching
+- Manifest for home screen install
+- Image caching for offline use
+
+### Responsive UI ✅
+- 2-column grid on mobile
+- 3-column on tablet
+- 5-column on desktop
+- Large touch targets (100px+)
 
 ## Prioritized Backlog
 
-### P0 (Critical)
-- [x] Core learning modules
-- [x] Audio playback
-- [x] Basic navigation
+### P0 (Next Sprint)
+- [ ] Add letter tracing for writing practice
+- [ ] Tamil language data
+- [ ] Consonants (hallulu) module
 
 ### P1 (Important)
-- [ ] Telugu consonants (hallulu) module
-- [ ] Offline audio caching (Service Worker)
-- [ ] Better Telugu TTS voice (if available)
+- [ ] Audio file preloading
+- [ ] Enhanced offline mode
+- [ ] Notification for daily learning reminder
 
 ### P2 (Nice to Have)
-- [ ] Hindi/Tamil language support
-- [ ] More word categories
-- [ ] Interactive tracing for letter writing
-- [ ] Achievement badges
+- [ ] Cloud sync with authentication
+- [ ] More word categories (Numbers, Body Parts)
+- [ ] Parent email reports
 
 ## Next Tasks
-1. Add consonants (hallulu) to Letters module
-2. Implement Service Worker for offline audio
-3. Add more rhymes and songs
-4. Enhanced progress tracking with charts
-5. Multi-language support framework
+1. Add interactive letter tracing feature
+2. Create Tamil language data files
+3. Add consonants to letters module
+4. Implement audio file caching for better TTS
+5. Add daily learning reminder notifications
 
-## Tech Stack
-- React 19, Tailwind CSS, framer-motion
-- FastAPI, Motor (async MongoDB)
-- react-player for YouTube
-- Web Speech API for TTS
-- localStorage for progress
+## Metrics to Track
+- Total interactions per language
+- Daily active sessions
+- Letter completion rate
+- Sticker unlock rate
